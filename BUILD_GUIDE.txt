@@ -1,0 +1,7 @@
+GitHub Actions 构建方法
+1. 创建 GitHub 仓库，将此 ZIP 中 StandoffMod_theos 文件夹里的所有文件（包括隐藏的 .github 文件夹）上传到仓库根目录。
+2. 打开 Actions -> Build arm64 iOS dylib -> Run workflow。
+3. 构建成功后，在该次运行页面的 Artifacts 下载 StandoffMod-ios-arm64-dylib。
+4. 解压后获取 StandoffMod.dylib。
+
+说明：这是可触发的编译配置，不是已生成的 dylib。需要联网的 GitHub Actions 运行器来获取 Theos 和 SDK。
